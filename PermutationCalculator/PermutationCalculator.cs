@@ -124,6 +124,7 @@ namespace PermutationCalculator
           }, startTask);
           startTask += taskLength;
         }
+
         Task.WaitAll(tasks);
         foreach (var task in tasks)
         {

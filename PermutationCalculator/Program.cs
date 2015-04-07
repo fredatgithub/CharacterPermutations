@@ -6,6 +6,7 @@ namespace PermutationCalculator
   {
     static void Main()
     {
+      Console.WriteLine("Please type in some characters to get all the permutations possible:");
       string inputString = Console.ReadLine();
       PermutationCalculator permutationCalculator = new PermutationCalculator();
       var result = permutationCalculator.Calculate(inputString.ToCharArray());
