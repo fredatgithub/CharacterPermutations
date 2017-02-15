@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PermutationCalculator
@@ -16,6 +16,7 @@ namespace PermutationCalculator
 
       return sum;
     }
+    
     public List<char[]> Calculate(char[] items)
     {
       if (items == null || items.Length == 0)
@@ -122,6 +123,7 @@ namespace PermutationCalculator
             }
             return mylist;
           }, startTask);
+          
           startTask += taskLength;
         }
 
